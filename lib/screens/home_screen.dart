@@ -239,6 +239,7 @@ class _BottomFormSheetState extends ConsumerState<BottomFormSheet> {
                             child: SimpleTextField(
                               textEditingController: _keyCont.elementAt(index),
                               header: "Key ${index + 1}",
+                              inputType: TextInputType.text,
                             ),
                           ),
                           const Spacer(),
@@ -248,6 +249,7 @@ class _BottomFormSheetState extends ConsumerState<BottomFormSheet> {
                               textEditingController:
                                   _valueCont.elementAt(index),
                               header: "Value ${index + 1}",
+                              inputType: TextInputType.text,
                             ),
                           ),
                         ],
